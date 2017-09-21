@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Delete</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h3>Are you sure you want ot delete the following course?</h3>
+            <br>
+            <p>Name: {{course.name}} {{course.id}}</p>
+            <br>
+            <p>Description: {{course.desc}}</p>
+            <br>
+            <br>
+            <a href="/" class="btn btn-normal">No</a>  <a href="/final/{{course.id}}" class="btn btn-danger">Yes! I want to delete this</a>
+        </div>
+    </body>
+</html>
